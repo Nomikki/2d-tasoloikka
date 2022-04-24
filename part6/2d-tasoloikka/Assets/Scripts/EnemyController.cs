@@ -41,7 +41,7 @@ public class EnemyController : MonoBehaviour
     }
 
     Vector2 direction = new Vector2(movementDirection, 0);
-    RaycastHit2D hitInfo = Physics2D.Raycast(rbody.position + new Vector2(movementDirection * 0.5f, -0.32f), direction, 0.05f);
+    RaycastHit2D hitInfo = Physics2D.Raycast(rbody.position + new Vector2(movementDirection * 0.6f, -0.32f), direction, 0.05f);
 
     if (hitInfo && hitInfo.collider)
     {

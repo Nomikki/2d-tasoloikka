@@ -97,7 +97,7 @@ public class HeroController : MonoBehaviour
   void ProcessAnimation()
   {
 
-    if (movementSpeed != 0)
+    if (movementX != 0)
       spriteRenderer.flipX = movementX > 0 ? false : true;
 
     anim.SetBool("isAlive", isAlive);
